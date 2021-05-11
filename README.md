@@ -11,3 +11,10 @@ How to get it running!
 6. php artisan serve
 7. go to 127.0.0.1:8000
 8. With any luck it should load.
+
+
+Debugging:
+Try installing Node.js
+Try installing composer
+Try installing PHP
+Is PHP added to your path? 
