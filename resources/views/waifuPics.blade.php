@@ -21,10 +21,10 @@
                         <!-- Naturally these would probably be stored in a database but due to time constaints... -->
                         <!--Category::pluck('category', 'id'); -->
                         <!--This could also probably be handled in a better way but right now it escapes me.-->
-                        <option value="waifu" <?php if($category == 'waifu') {echo 'selected';} ?>>Waifu</option>
-                        <option value="neko" <?php if($category == 'neko') {echo 'selected';} ?>>Neko</option>
-                        <option value="bully" <?php if($category == 'bully') {echo 'selected';} ?>>Bully</option>
-                        <option value="wave" <?php if($category == 'wave') {echo 'selected';} ?>>Wave</option>
+                        <option value="waifu" <?php if(isset($category) && $category == 'waifu') {echo 'selected';} ?>>Waifu</option>
+                        <option value="neko" <?php if(isset($category) && $category == 'neko') {echo 'selected';} ?>>Neko</option>
+                        <option value="bully" <?php if(isset($category) && $category == 'bully') {echo 'selected';} ?>>Bully</option>
+                        <option value="wave" <?php if(isset($category) && $category == 'wave') {echo 'selected';} ?>>Wave</option>
                     </select>
                 </div>
 
