@@ -1,5 +1,6 @@
 What is this? 
-Little project I made to ping the waifu pics api and return an image. This was developed prior to waifu pics actually making their fancy little dashboard.
+
+A little project I made to ping the waifu pics api and return an image. This was developed prior to waifu pics actually making their fancy little dashboard.
 
 How to get it running!
 
