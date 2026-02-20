@@ -1,24 +1,72 @@
-What is this? 
+# Waifu Pics API (Laravel)
 
-A little project I made to ping the waifu pics api and return an image. This was developed prior to waifu pics actually making their fancy little dashboard.
+A simple Laravel-based wrapper around the public Waifu Pics image API.  
+This project was built as a portfolio piece and is now archived.
 
-How to get it running!
+It provides clean API endpoints that fetch and return random anime images from SFW and NSFW categories.
 
-1. composer install
-2. npm install
-3. npm run prod
+---
 
-4. Windows: copy .env.example .env
-   Linux/Mac: cp .env.example .env
+## Overview
 
-5. php artisan key:generate
-6. php artisan serve
-7. go to 127.0.0.1:8000
-8. With any luck it should load.
+This application acts as a backend proxy to the Waifu Pics API, returning JSON responses containing image URLs. It is built with Laravel and designed to be lightweight and easy to run locally.
 
+---
 
-Debugging:
-Try installing Node.js
-Try installing composer
-Try installing PHP
-Is PHP added to your path? 
+## Requirements
+
+- PHP 8.x
+- Composer
+- Node.js & npm
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/PursDios/Waifu_Pics.git
+cd Waifu_Pics
+
+Install PHP dependencies:
+
+composer install
+
+Install frontend dependencies:
+
+npm install
+npm run build
+
+Create environment file:
+
+cp .env.example .env
+
+Generate application key:
+
+php artisan key:generate
+
+Start the local server:
+
+php artisan serve
+
+The API will be available at:
+
+http://127.0.0.1:8000
+Example Endpoints
+
+SFW example:
+
+GET /api/sfw/waifu
+
+NSFW example:
+
+GET /api/nsfw/neko
+
+Responses return JSON containing a direct image URL provided by the Waifu Pics service.
+
+Notes
+
+This project is archived and no longer actively maintained.
+
+It was created as a demonstration of API integration and Laravel backend structure.
